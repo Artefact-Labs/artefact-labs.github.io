@@ -1,0 +1,265 @@
+.boxed-btn {
+	background: #fff;
+	color: #131313;
+	display: inline-block;
+	padding: 14px 44px;
+	font-family: $font1;
+	font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid $btn_bg;
+    // width: 180px;
+    text-align: center;
+    color: $btn_bg !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background: $btn_bg;
+        color: #fff !important;
+        border: 1px solid $btn_bg;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+.boxed-btn3 {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
+    background: $btn_bg;
+	color: #fff;
+	display: inline-block;
+	padding: 12px 33px;
+	font-family: $font1;
+	font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    border: 1px solid transparent;
+    @include border-radius(30px);
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+    @include transition(.5s);
+    cursor: pointer;
+    &:hover{
+        border: 1px solid $btn_bg;
+        color: $btn_bg !important;
+        background: transparent ;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+.boxed-btn4 {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
+    background: $btn_bg;
+	color: #fff;
+	display: inline-block;
+	padding: 14px 27px;
+	font-family: $font1;
+	font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    // border: 1px solid transparent;
+    @include border-radius(0px);
+    // width: 180px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+    @include transition(.5s);
+    cursor: pointer;
+    letter-spacing: 2px;
+    &:hover{
+        background: $btn_bg;
+        color: #fff !important;
+        // border: 1px solid #28AE61;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+
+.boxed-btn3-white {
+	color: #fff;
+	display: inline-block;
+    padding: 13px 27px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #fff;
+    @include border-radius(5px);
+    // width: 180px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+    @include transition(.5s);
+    cursor: pointer;
+    letter-spacing: 2px;
+    &:hover{
+        background: #28AE61;
+        color: #fff !important;
+        border: 1px solid transparent;
+    }
+    i{
+        margin-right: 2px;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+
+.boxed-btn3-green-2 {
+	color: $btn_bg !important;
+	display: inline-block;
+    padding: 14px 31px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid $btn_bg;
+    @include border-radius(5px);
+    // width: 180px;
+    text-align: center;
+    text-transform: capitalize;
+    @include transition(.5s);
+    cursor: pointer;
+    letter-spacing: 2px;
+    &:hover{
+        background: $btn_bg;
+        color: #fff !important;
+        border: 1px solid transparent;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+.boxed-btn2 {
+	background: transparent;
+	color: #fff;
+	display: inline-block;
+	padding: 18px 24px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &:hover{
+        background: #fff;
+        color: #131313 !important;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.line-button{
+    color: #919191;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    &::before{
+        position: absolute;
+        content: "";
+        background: #919191;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+    }
+    &:hover{
+        color: #009DFF;
+    }
+    &:hover::before{
+        background: #009DFF;
+    }
+}
+.line_btn{
+    display: inline-block;
+    font-size: 15px;
+    color: $btn_bg;
+    border: 1px solid $btn_bg;
+    text-transform: capitalize;
+    padding: 13px 34px;
+    font-weight: 600;
+    &:hover{
+        background: $btn_bg;
+        color: #fff;
+    }
+}
+
+
+
+/* Essence Button */
+
+.academy-btn {
+    display: inline-block;
+    min-width: 160px;
+    height: 65px;
+    color: $white-color;
+    border: none;
+    border-radius: 0;
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 65px;
+    @include transition(all 500ms);
+    background: $primary-color;
+    background-image: -webkit-linear-gradient(left, $primary-color 0%, $secondary-color 51%, $primary-color 100%);
+    background-image: linear-gradient(to right, $primary-color 0%, $secondary-color 51%, $primary-color 100%);
+    font-weight: 600;
+    &.btn-sm {
+        min-width: 110px;
+        padding: 0 20px;
+        height: 42px;
+        line-height: 42px;
+    }
+    &.active,
+    &:hover,
+    &:focus {
+        font-size: 14px;
+        font-weight: 600;
+        color: $white-color;
+        @include bg-gradients;
+    }
+    &.btn-2 {
+        background: $dark-color;
+        &:hover,
+        &:focus {
+            background: $hover-color;
+        }
+    }
+    &.btn-3 {
+        background: $hover-color;
+        &:hover,
+        &:focus {
+            background: $dark-color;
+        }
+    }
+    &.btn-4 {
+        background: $white-color;
+        border: 2px solid $hover-color;
+        color: $text-color;
+        &:hover,
+        &:focus {
+            background: $hover-color;
+            color: $white-color;
+        }
+    }
+}
